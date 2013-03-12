@@ -1,0 +1,4 @@
+[defined] digit = 0..9 # comments, output shall start with a uppercase letter.
+[defined] ascii = a..z | A..Z
+Keyword = 'if' | 'while' | 'for'
+Identifier = ('_' | ascii) ('_' | ascii | digit)*
