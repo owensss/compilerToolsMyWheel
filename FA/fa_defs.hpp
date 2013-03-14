@@ -1,10 +1,16 @@
 #include <memory>
 namespace FA {
 
-class Alphabet;
+template <typename T> class Word;
 template <typename T>
-	using AlphabetPtr = std::shared_ptr<Alphabet<T>> ;
-class State;
-class Transfer;
+	using WordPtr = std::shared_ptr<Word<T>> ;
+
+template <typename T> class State;
+template <typename T>
+	using StatePtr = std::shared_ptr<State<T>>;
+
+template <typename T> class Transition;
+template <typename T>
+	using TransitionPtr = std::shared_ptr<Transition<T>>;
 
 }
